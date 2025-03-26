@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@font-face {
+    font-family: 'Poppins';
+    src: url('librerias\fonts');
+}
+
+/*Estilo del archivo index*/
 *{
     margin: 0;
     padding: 0;
@@ -185,8 +190,7 @@ strong {
     border: 2px solid var(--main-color);
     letter-spacing: 0.1rem;
     font-weight: 600;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease,
-      box-shadow 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 } 
 .btn:hover {
@@ -326,6 +330,7 @@ strong {
         grid-template-columns: repeat(2, 1fr); 
     }
 }
+
 /*Estilo del archivo experiencia*/
 .experiencia{
     background: var(--second-bg-color);
@@ -512,6 +517,8 @@ strong {
     color: var(--text-color);
     margin-bottom: 1.5rem;
 }
+
+/*Estilo para el archivo contacto*/
 .contacto h2{
     font-size: 6rem;
     font-weight: 700;
