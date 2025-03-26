@@ -13,22 +13,32 @@
     <header class="header"> 
         <a href="#" class="logo">Jose Hernandez</a>
 
-        <i class="fa-solid fa-bars" class="menu-icon"></i>
+        <i class="fa-solid fa-bars menu-icon"></i>
 
         <nav class="navbar">
             <a href="C:\Users\Asus\TP1\index.html" class="active">INICIO</a>
             <a href="C:\Users\Asus\TP1\html\habilidades.html">HABILIDADES</a>
             <a href="C:\Users\Asus\TP1\html\experiencia-laboral.html">EXPERIENCIA LABORAL</a>
-            <a href="#PROYECTOS">PROYECTOS</a>
-            <a href="#CONTACTO">CONTACTO</a>
+            <a href="C:\Users\Asus\TP1\html\proyectos.html">PROYECTOS</a>
+            <a href="C:\Users\Asus\TP1\html\contacto.html">CONTACTO</a>
         </nav>
     </header>
 
     <section class="habilidades" id="skills">
         <h2 class="titulo">HABILIDADES</h2>
 
-        <div class="hab-conteiner">
-            <div class="hab-box">
+        <div class="hab-container">
+            <article class="hab-box">
+                <div class="hab-info">
+                    <h4>Ingeniero en Sistemas</h4>
+                    <p>Soy graduado de la Universidad Tecnologica Nacional (San Francisco, Cordoba),
+                        lo que me hace un profesional integral, destacando por mi capacidad analítica para 
+                        resolver problemas complejos, mi habilidad para gestionar proyectos tecnológicos y
+                        liderar equipos, así como mi aptitud para innovar y comunicar conocimientos de manera efectiva.
+                    </p>
+                </div>
+            </article>
+            <article class="hab-box">
                 <div class="hab-info">
                     <h4>Programador</h4>
                     <p>Mi experiencia en programación abarca un amplio espectro de lenguajes, 
@@ -40,10 +50,10 @@
                         y el seguimiento de cambios.
                     </p>
                 </div>
-            </div>
-            <div class="hab-box">
+            </article>
+            <article class="hab-box">
                 <div class="hab-info">
-                    <h4>Analista de datos</h4>
+                    <h4>Analista de Datos</h4>
                     <p>En el campo del análisis de datos, manejo con destreza herramientas como SQL,
                         Pandas y NumPy para la manipulación y el análisis de información. La visualización
                         de datos es otra de mis fortalezas, utilizando Tableau o Power BI para presentar 
@@ -52,10 +62,10 @@
                         modelos predictivos
                     </p>
                 </div>
-            </div>
-            <div class="hab-box">
+            </article>
+            <article class="hab-box">
                 <div class="hab-info">
-                    <h4>Diseno web</h4>
+                    <h4>Diseño Web</h4>
                     <p>Mi enfoque en el diseño web se centra en la creación de interfaces funcionales
                         y atractivas, utilizando HTML, CSS y frameworks como React o Vue.js. Para el
                         diseño de prototipos y la colaboración, utilizo herramientas como Figma y Adobe XD.
@@ -63,18 +73,56 @@
                         que me ha proporcionado una base sólida en el desarrollo web front-end.
                     </p>
                 </div>
-            </div>
-            <div class="hab-box">
+            </article>
+            <article class="hab-box">
                 <div class="hab-info">
-                    <h4>Metodologias agiles</h4>
+                    <h4>Metodologías Ágiles</h4>
                     <p>La gestión de proyectos es otra de mis áreas de especialización, aplicando 
                         metodologías ágiles como Scrum y Kanban para la organización y el seguimiento de 
                         tareas. Utilizo herramientas de gestión de proyectos como Jira y Trello para facilitar
                         la colaboración y la comunicación dentro de los equipos. 
                     </p>
                 </div>
-            </div>
+            </article>
+            <article class="hab-box">
+                <div class="hab-info">
+                    <h4>Seguridad Informáica</h4>
+                    <p>La gestión de proyectos es otra de mis áreas de especialización, aplicando 
+                        metodologías ágiles como Scrum y Kanban para la organización y el seguimiento de 
+                        tareas. Utilizo herramientas de gestión de proyectos como Jira y Trello para facilitar
+                        la colaboración y la comunicación dentro de los equipos. 
+                    </p>
+                </div>
+            </article>
         </div>
-
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const navbar = document.querySelector(".navbar");
+
+            menuIcon.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
+    </script>
+    
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/home" target="_blank" rel="noreferrer"><i class="fa-solid fa-link"></i></a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://mail.google.com"target="_blank" rel="noreferrer"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Politicas de Privacidad</a></li>
+        </ul>
+        <p class="copyright"> 
+            Jose Hernandez 2019. | Todos los derechos reservados
+        </p>
+    </footer>
 </body>

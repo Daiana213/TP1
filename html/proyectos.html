@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PORTFOLIO JOSE HERNANDEZ</title>
+    
+    <link rel="stylesheet" href="C:\Users\Asus\TP1\css\style.css">
+</head>
+<body>
+    <header class="header"> 
+        <a href="#" class="logo">Jose Hernandez</a>
+
+        <i class="fa-solid fa-bars menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="C:\Users\Asus\TP1\index.html" class="active">INICIO</a>
+            <a href="C:\Users\Asus\TP1\html\habilidades.html">HABILIDADES</a>
+            <a href="C:\Users\Asus\TP1\html\experiencia-laboral.html">EXPERIENCIA LABORAL</a>
+            <a href="C:\Users\Asus\TP1\html\proyectos.html">PROYECTOS</a>
+            <a href="C:\Users\Asus\TP1\html\contacto.html">CONTACTO</a>
+        </nav>
+    </header>
+
+    <section id="proyectos" class="seccion-proyectos">
+        <div class="contenedor">
+          <h2 class="titulo">PROYECTOS</h2>
+          <div class="cuadricula">
+            <article class="tarjeta">
+              <div class="imagen-proyecto">
+                <img src="C:\Users\Asus\TP1\imagenes\proyecto1.png" alt="Proyecto 1" />
+              </div>
+              <div class="info">
+                <h3 class="titulo-proyecto">Dashboard de Inteligencia de Negocios</h3>
+                <p class="descripcion-proyecto">
+                    Desarrollo de un dashboard interactivo en Power BI o Tableau para
+                    visualizar métricas clave de ventas y marketing. La herramienta permite
+                    filtrar datos en tiempo real, identificar tendencias y tomar decisiones
+                    basadas en datos.
+                </p>
+                <a href="#" class="btn">Ver proyecto</a>
+              </div>
+            </article>
+            <article class="tarjeta">
+              <div class="imagen-proyecto">
+                <img src="C:\Users\Asus\TP1\imagenes\proyecto2.jpg" alt="Proyecto 2" />
+              </div>
+              <div class="info">
+                <h3 class="titulo-proyecto">Plataforma Web de Análisis de Datos</h3>
+                <p class="descripcion-proyecto">
+                    Creación de una aplicación web utilizando Django/Flask y React para que 
+                    los usuarios puedan subir datasets y generar visualizaciones y análisis
+                    estadísticos en tiempo real. Incluye integración con librerías como Pandas, 
+                    Matplotlib y Seaborn.
+                </p>
+                <a href="#" class="btn">Ver proyecto</a>
+              </div>
+            </article>
+    
+            <article class="tarjeta">
+              <div class="imagen-proyecto">
+                <img src="C:\Users\Asus\TP1\imagenes\proyecto3.png" alt="Proyecto 3" />
+              </div>
+              <div class="info">
+                <h3 class="titulo-proyecto">Automatización de Reportes con Python</h3>
+                <p class="descripcion-proyecto">
+                    Desarrollo de scripts en Python que automatizan la extracción, limpieza
+                    y generación de reportes en formatos como Excel y PDF. Se conecta a bases de
+                    datos SQL y APIs para obtener información actualizada.
+                </p>
+                <a href="#" class="btn btn-proyecto">Ver proyecto</a>
+              </div>
+            </article>
+
+            <article class="tarjeta">
+                <div class="imagen-proyecto">
+                  <img src="C:\Users\Asus\TP1\imagenes\proyecto4.png" alt="Proyecto 3" />
+                </div>
+                <div class="info">
+                  <h3 class="titulo-proyecto">Sistema de Seguimiento de KPIs Empresariales</h3>
+                  <p class="descripcion-proyecto">
+                    Implementación de una plataforma web que centraliza y visualiza indicadores 
+                    clave de rendimiento (KPIs) de diferentes departamentos. Se integra con 
+                    bases de datos y APIs externas para obtener datos en tiempo real.
+                  </p>
+                  <a href="#" class="btn btn-proyecto">Ver proyecto</a>
+                </div>
+              </article>
+    
+              <article class="tarjeta">
+                <div class="imagen-proyecto">
+                  <img src="C:\Users\Asus\TP1\imagenes\proyecto5.png" alt="Proyecto 3" />
+                </div>
+                <div class="info">
+                  <h3 class="titulo-proyecto">Scraping y Análisis de Datos de Redes Sociales</h3>
+                  <p class="descripcion-proyecto">
+                    Creación de un sistema que extrae datos de redes sociales como Twitter, 
+                    Instagram y LinkedIn, analiza tendencias y mide el impacto de campañas de 
+                    marketing con sentiment analysis y NLP.
+                  </p>
+                  <a href="#" class="btn btn-proyecto">Ver proyecto</a>
+                </div>
+              </article>
+
+              <article class="tarjeta">
+                <div class="imagen-proyecto">
+                  <img src="C:\Users\Asus\TP1\imagenes\proyecto6.png" alt="Proyecto 3" />
+                </div>
+                <div class="info">
+                  <h3 class="titulo-proyecto">Integración de APIs de Datos Abiertos</h3>
+                  <p class="descripcion-proyecto">
+                    Desarrollo de una web que consume APIs gubernamentales y visualiza datos de interés 
+                    público (clima, transporte, economía). Permite a los usuarios explorar y descargar la 
+                    información en formatos abiertos.
+                  </p>
+                  <a href="#" class="btn btn-proyecto">Ver proyecto</a>
+                </div>
+              </article>
+
+          </div>
+        </div>
+      </section>
+           
+        
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const navbar = document.querySelector(".navbar");
+
+            menuIcon.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/home" target="_blank" rel="noreferrer"><i class="fa-solid fa-link"></i></a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://mail.google.com"target="_blank" rel="noreferrer"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Politicas de Privacidad</a></li>
+        </ul>
+        <p class="copyright"> 
+            Jose Hernandez 2019. | Todos los derechos reservados
+        </p>
+    </footer>
+</body>

@@ -6,33 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>PORTFOLIO JOSE HERNANDEZ</title>
-    
-    <link rel="stylesheet" href="C:\Users\Asus\TP1\css\style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header"> 
-        <a href="#" class="logo">Jose Hernandez</a>
+        <a href="index.html" class="logo">Jose Hernandez</a>
 
-        <i class="fa-solid fa-bars" class="menu-icon"></i>
+        <i class="fa-solid fa-bars menu-icon"></i>
 
         <nav class="navbar">
-            <a href="C:\Users\Asus\TP1\index.html" class="active">INICIO</a>
-            <a href="C:\Users\Asus\TP1\html\habilidades.html">HABILIDADES</a>
-            <a href="C:\Users\Asus\TP1\experiencia-laboral.html">EXPERIENCIA LABORAL</a>
-            <a href="#PROYECTOS">PROYECTOS</a>
-            <a href="#CONTACTO">CONTACTO</a>
+                <a href="index.html" class="active">INICIO</a>
+                <a href="html/habilidades.html">HABILIDADES</a>
+                <a href="html/experiencia-laboral.html">EXPERIENCIA LABORAL</a>
+                <a href="html/proyectos.html">PROYECTOS</a>
+                <a href="html/contacto.html">CONTACTO</a>
         </nav>
     </header>
 
     <section id="index.html" class="inicio">
         <div class="inicio-img">
-            <img 
-            src="C:\Users\Asus\TP1\imagenes\images.jpg" 
-            alt="Foto Jose Hernandez" 
-            title="Foto Jose Hernandez">
+            <img src="imagenes/images.jpg" alt="Foto Jose Hernandez" title="Foto Jose Hernandez">
         </div>
-        <div class="inicio-content">
-            <h1>Hola, soy <spam>Jose</spam></h1>
+        <article class="inicio-content">
+            <h1>Hola, soy <span>Jose</span></h1>
             <h3 class="typing-text"><span></span></h3>
             <p> Ingeniero en Sistemas de Información con experiencia en desarrollo de software, análisis de datos y diseño web. 
                 Apasionado por la resolución de problemas mediante el uso de tecnología, optimización de procesos
@@ -41,126 +37,22 @@
             </p>
 
             <div class="social-icon">
-                <a href="#"><i class="fa-solid fa-link"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/home" target="_blank" rel="noreferrer"><i class="fa-solid fa-link"></i></a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://mail.google.com" target="_blank" rel="noreferrer"><i class="fa-solid fa-envelope"></i></a>
             </div>
-
-            <a href="#" class="btn">Contactame</a>
-        </div>
+        </article>
     </section>
-    
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const navbar = document.querySelector(".navbar");
 
-<!--     <main>
-        <img 
-            src="../imagenes/images.jpg" 
-            alt="Foto Jose Hernandez" 
-            title="Foto Jose Hernandez" 
-            width="100" 
-            height="100">
-
-        <section id="SOBRE MI" tabindex="0">
-            <h2>SOBRE MI</h2>
-            <p>
-                ¡Hola! Soy un programador en crecimiento con entusiasmo por el desarrollo 
-                web y el diseño de interfaces atractivas y funcionales. Me especializo en 
-                la creación de páginas web modernas y adaptativas, combinando código limpio 
-                con un diseño intuitivo. Siempre estoy aprendiendo nuevas tecnologías y mejorando 
-                mis habilidades para ofrecer soluciones eficientes y creativas. Si buscas alguien
-                con pasión por el desarrollo web, estaré encantado de colaborar contigo.
-            </p>
-        </section>
-
-        <section>
-            <h2 id="HABILIDADES">HABILIDADES</h2>
-
-            <p><strong>HTML5:</strong> Intermedio - <a href="https://www.freecodecamp.org/certification/html5" target="_blank">Ver Certificado</a></p>
-            <p><strong>CSS3:</strong> Intermedio - <a href="https://www.coursera.org/learn/css3" target="_blank">Ver Certificado</a></p>
-            <p><strong>JavaScript:</strong> Junior - <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Ver Certificado</a></p>
-            <p><strong>React.js:</strong> Básico - <a href="https://www.udemy.com/course/react-js-certification-course" target="_blank">Ver Certificado</a></p>
-            <p><strong>Git/GitHub:</strong> Junior - <a href="https://www.udacity.com/course/version-control-with-git--ud123" target="_blank">Ver Certificado</a></p>        
-        </section>
-    
-        <section id="EXPERIENCIA LABORAL" >
-            <h2>EXPERIENCIA LABORAL</h2>
-
-            <div class="empresa">
-                <h3>Pasantía en Soporte Web - <span>Innovatech</span></h3>
-                <p><strong>Duración:</strong> Enero 2022 - Junio 2022</p>
-                <p><strong>Tareas:</strong> Asistencia en mantenimiento web y resolución de problemas técnicos básicos.</p>
-                <p><strong>Contacto:</strong> soporte@innovatech.com | +1 456 789 012</p>
-            </div>
-
-            <div class="empresa">
-                <h3>Pasantía en Desarrollo Frontend - <span>Creativa Digital</span></h3>
-                <p><strong>Duración:</strong> Julio 2022 - Diciembre 2022</p>
-                <p><strong>Tareas:</strong> Colaboración en el diseño de interfaces y desarrollo con HTML, CSS y JavaScript.</p>
-                <p><strong>Contacto:</strong> info@creativadigital.com | +1 987 654 321</p>
-            </div>
-
-            <div class="empresa">
-                <h3>Desarrollador Frontend - <span>InnovaWeb</span></h3>
-                <p><strong>Duración:</strong> Diciembre 2022 - Presente</p>
-                <p><strong>Tareas:</strong> Diseño e implementación de interfaces responsivas utilizando React.js y Tailwind CSS, optimización del rendimiento en sitios web y colaboración con equipos ágiles para proyectos innovadores.</p>
-                <p><strong>Contacto:</strong> contacto@innovaweb.com | +54 351 234 5678</p>
-            </div>
-            
-        </section>
-
-        <section id="PROYECTOS"> 
-            <h2>PROYECTOS</h2>
-        
-            <div class="proyecto">
-                <h3>Proyecto 1: Simulador de Gestión de Tráfico</h3>
-                <p>Desarrollo de una aplicación en Python que simula el tráfico en una ciudad, incorporando modelos de inteligencia artificial para optimizar la sincronización de semáforos y reducir la congestión vehicular.</p>
-            </div>
-            
-            <div class="proyecto">
-                <h3>Proyecto 2: Plataforma de Seguridad Informática</h3>
-                <p>Creación de una plataforma web para análisis de vulnerabilidades en sistemas operativos. Incluye herramientas de escaneo, generación de reportes y recomendaciones para mejorar la seguridad.</p>
-            </div>
-            
-            <div class="proyecto">
-                <h3>Proyecto 3: Sistema de Gestión de Pasantías</h3>
-                <p>Implementación de un sistema web para la gestión de pasantías en universidades, permitiendo la administración de ofertas laborales, postulaciones y seguimientos de alumnos.</p>
-            </div>
-            
-            <div class="proyecto">
-                <h3>Proyecto 4: Aplicación de Domótica Inteligente</h3>
-                <p>Desarrollo de una aplicación móvil en Kotlin para controlar dispositivos del hogar inteligente, con integración de sensores IoT y automatización personalizada basada en hábitos del usuario.</p>
-            </div>
-
-            <div class="proyecto">
-                <h3>Proyecto 5: E-commerce de Moda Sostenible</h3>
-                <p>Creación de un sitio web de comercio electrónico enfocado en ropa sostenible, con integración de pasarela de pagos y funcionalidad de búsqueda avanzada.</p>
-            </div>
-            
-            <div class="proyecto">
-                <h3>Proyecto 6: Plataforma de Aprendizaje Online</h3>
-                <p>Desarrollo de una plataforma educativa para estudiantes, que incluye foros, cuestionarios interactivos y módulos de aprendizaje adaptativos.</p>
-            </div>
-        
-            <div class="proyecto">
-                <h3>Proyecto 7: Aplicación de Fitness Personalizado</h3>
-                <p>Aplicación móvil desarrollada en Flutter que permite a los usuarios diseñar planes de ejercicios y nutrición personalizados con seguimiento de progreso.</p>
-            </div>
-
-        </section>
-
-        <footer id=""> 
-            <h2>Conéctate conmigo</h2>
-
-            <div class="redes">
-                <a href="#" target="_blank">LinkedIn</a>
-                <a href="#" target="_blank">GitHub</a>
-            </div>
-
-            <p>Para más información, puedes contactar a José Hernández a través de:</p>
-            <a href="tel:+123456789">+1 234 567 89</a>
-            <a href="mailto:jose.hernandez@example.com">jose.hernandez@example.com</a>
-
-        </footer> 
-    </main> --> 
-
+            menuIcon.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
+</html>

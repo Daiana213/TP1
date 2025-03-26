@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PORTFOLIO JOSE HERNANDEZ</title>
+    
+    <link rel="stylesheet" href="C:\Users\Asus\TP1\css\style.css">
+</head>
+<body>
+    <header class="header"> 
+        <a href="#" class="logo">Jose Hernandez</a>
+
+        <i class="fa-solid fa-bars menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="C:\Users\Asus\TP1\index.html" class="active">INICIO</a>
+            <a href="C:\Users\Asus\TP1\html\habilidades.html">HABILIDADES</a>
+            <a href="C:\Users\Asus\TP1\html\experiencia-laboral.html">EXPERIENCIA LABORAL</a>
+            <a href="C:\Users\Asus\TP1\html\proyectos.html">PROYECTOS</a>
+            <a href="C:\Users\Asus\TP1\html\contacto.html">CONTACTO</a>
+        </nav>
+    </header>
+
+    <section class="contacto" id="contacto">
+        <h2 class="titulo">Contactame</h2>
+        <form action="">
+            <article class="input-box"> 
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <input type="number" placeholder="Numero de telefono" required>
+                <input type="text" placeholder="Sugerencias" required>
+            </article>
+            <textarea name="" id="" cols="" rows="10" placeholder="tu mensaje"></textarea>
+            <input type="submit" value="Enviar Mensaje" class="btn">
+        </form>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const navbar = document.querySelector(".navbar");
+
+            menuIcon.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/home" target="_blank" rel="noreferrer"><i class="fa-solid fa-link"></i></a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://mail.google.com"target="_blank" rel="noreferrer"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Politicas de Privacidad</a></li>
+        </ul>
+        <p class="copyright"> 
+            Jose Hernandez 2019. | Todos los derechos reservados
+        </p>
+    </footer>
+
+</body>
